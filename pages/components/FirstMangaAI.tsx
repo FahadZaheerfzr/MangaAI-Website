@@ -1,5 +1,4 @@
 import React from 'react'
-import { IoMdCopy } from 'react-icons/io'
 
 const FirstMangaAI = () => {
       return (

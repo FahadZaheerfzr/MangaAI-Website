@@ -17,6 +17,7 @@ import Slider from './components/Slider'
 import MangaAiSlider from './components/MangaAiSlider'
 import WhyChooseSlider from './components/WhyChooseSlider'
 import MangaMobiloe from './components/MangaMobiloe'
+import BuyManga from './components/BuyManga'
 
 
 const lato = Lato({
@@ -33,6 +34,7 @@ export default function Home() {
       </div>
 
       <FirstMangaAI />
+      <BuyManga />
       <WhyChooseSlider />
       <WhyChoose />
 
