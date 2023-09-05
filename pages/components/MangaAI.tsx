@@ -38,7 +38,7 @@ const MangaAI = () => {
             <li className='text-[#F8F7F5]'>Documentation</li>
           </ul>
         </nav>
-        <div className="w-[633px] h-[0px] border border-gray-200"></div>
+        <div className="lg:w-[633px] h-[0px] border border-gray-200"></div>
       </div>
 
 

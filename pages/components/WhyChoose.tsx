@@ -1,65 +1,54 @@
 import React from "react";
 
+
+const cards = [
+  {
+    id: 1,
+    title: "Empower Your Creativity",
+    description: "Our AI-powered platform give you the freedom to bring your anime visions to life. From character designs to background art, you're in control of every detail.",
+  },
+  {
+    id: 2,
+    title: "Join a Vibrant Community",
+    description: "Connect with fellow creators, enthusiasts, and industry professionals in an environment designed to foster collaboration and innovation.",
+  },
+  {
+    id: 3,
+    title: "Elevate Quality",
+    description: "Experience the excellence of professional-grade animation. Our tools streamline the production process, ensuring that your creations are visually captivating and emotionally resonant.",
+  }
+]
+
 const WhyChoose = () => {
   return (
     <>
       <div className="bg-main-gray relative hidden lg:block font-Lato">
-        <h1 className=" w-fit m-auto pt-11 bg-text-gradient bg-clip-text text-transparent font-custom9">
-          Why Choose Manga AI?
+        <h1 className=" lg:text-[54px]  w-fit m-auto pt-11 bg-text-gradient bg-clip-text text-transparent font-custom9">
+            Why Choose Manga AI?
         </h1>
         <img
-          className="absolute inset-0 w-full h-fit"
-          src="./images/divq1.svg"
-          alt="error"
-        />
-
-        <div
-          className="flex left-0 w-full h-full  items-center justify-center pt-24 pb-24"
-          id="containor">
-          <div className="bg-gray-800 rounded-lg  pl-5 justify-center relative z-10 w-fit p-4 ">
-            <h1 className="text-[#88C48A]  font-custom8 justify-center lg:text-lg text-lg w-36 m-auto text-center pb-4">
-              Empower Your Creativity
-            </h1>
-            <p className="text-[#F8F7F5] w-64 m-auto text-justify pb-5">
-              Our AI-powered platform give you the freedom to bring your anime
-              visions to life. From character designs to background art, you're
-              in control of every detail.
-            </p>
-            <button className="rounded-md text-[#F8F7F5] bg-gradient-to-r  from-fuchsia-700 via-slate-500 to-green-500 p-2 flex m-auto lg:mt-8 mb-3 px-4 py-3 ">
-              Generate Anime Art{" "}
-            </button>
-          </div>
-
-          <div className="bg-gray-800 rounded-lg  pl-5 justify-center float-left  ml-5 relative z-10 w-fit p-4">
-            <h1 className="text-[#88C48A]  font-custom8 justify-center lg:text-lg text-lg w-36 m-auto text-center pb-4 ">
-              Join a Vibrant Community
-            </h1>
-            <p className="text-[#F8F7F5] w-64 m-auto text-justify pb-5 ">
-              Connect with fellow creators, enthusiasts, and industry
-              professionals in an environment designed to foster collaboration
-              and innovation.
-            </p>
-            <button className="rounded-md text-[#F8F7F5] bg-gradient-to-r from-fuchsia-700 via-slate-500 to-green-500 p-2 flex  lg:mt-8 mt-4 m-auto mb-2 px-4 py-3 ">
-              Generate Anime Art{" "}
-            </button>
-          </div>
-
-          <div className="bg-gray-800 rounded-lg  pl-5 justify-center ml-5 relative z-10 w-fit p-4">
-            <h1 className="text-[#88C48A] font-custom8 justify-center lg:text-lg text-lg w-28 m-auto text-center pb-4">
-              Elevate Quality
-            </h1>
-            <p className="text-[#F8F7F5] w-64 m-auto text-justify pb-4">
-              Experience the excellence of professional-grade animation. Our
-              tools streamline the production process, ensuring that your
-              creations are visually captivating and emotionally resonant.
-            </p>
-            <button className="rounded-md text-[#F8F7F5] bg-gradient-to-r from-fuchsia-700 via-slate-500 to-green-500 p-2  flex lg:mt-4 mb-2 mt-3 m-auto px-4 py-3 ">
-              Generate Anime Art{" "}
-            </button>
-          </div>
-        </div>
+          className="absolute mt-28 inset-0 w-full h-fit"
+          src="./images/divq1.svg" alt="error"/>
+  <div className="w-[90%] m-auto" >
+            <div className="flex w-full gap-x-10 h-full items-center justify-center pt-24 pb-24" id="containor">
+              {cards.map((card) => (
+              <div key={card.id} className="bg-[#3D3D3D] flex flex-col h-[550px] rounded-lg justify-between relative z-10 w-1/3 px-4 ">
+                <h1 className="text-[#88C48A] w-[65%]  font-custom8 justify-center lg:text-[36px] text-lg leading-10 m-auto text-center pb-4">
+                  {card.title}
+                </h1>
+                <p className="text-[#F8F7F5] lg:text-[23px] leading-[34px] tracking-[0.46px] w-fit m-auto text-justify pb-5">
+                  {card.description}
+                </p>
+                <button className="rounded-md text-[#F8F7F5] bg-gradient-to-r from-purple-500 to-green-500 px-4 py-1 lg:text-[26px]  flex m-auto lg:mt-4 mt-3 ">
+                  Generate Anime Art{" "}
+                </button>
+              </div> ))}
+            </div>
+  </div>
 
 
+
+    
       </div>
     </>
   );

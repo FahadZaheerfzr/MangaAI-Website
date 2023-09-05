@@ -1,83 +1,69 @@
 import React from 'react'
 
-const MangaMainNft = React.forwardRef((props,ref)=>{
-    return(
-        <div ref={ref} className="w-full pt-56 mt-20 hidden lg:block">
-        <div className="flex pb-16 text-xs lg:text-base">
-          <div className="lg:ml-20 ml-2 w-fit">
-            <h2 className=" text-left  lg:text-left mb-3">
+const MangaMainNft = React.forwardRef((props, ref) => {
+  return (
+    <div ref={ref} className="w-full hidden lg:block">
+      <div className="w-full mt-32">
+        <div className="flex pb-16 text-xs lg:text-base ">
+          <div className="lg:ml-16 ml-2 w-fit ">
+            <h2 className=" text-left lg:text-[50px] lg:text-left mb-10 w-fit">
               <span
-                className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text 'containor' >
-          <div className='bg-gray-800 rounded-lg lg:w-1/3  justify-center relative z-10 font-custom9 "
-                style={{
-                  backgroundImage:
-                    "linear-gradient(to right, #8F41B4, #7D98A6, #50C355)",
-                }}
-              >
+                className="text-transparent bg-clip-text font-[900]" style={{ backgroundImage: "linear-gradient(to right, #8F41B4, #7D98A6, #50C355)", }}>
                 Manga AI Membership NFT
               </span>
             </h2>
-            <h4 className="text-sm lg:text-lg ">
+            <h4 className="text-sm lg:text-[32px] mb-4 pt-3 w-fit">
               <span
-                className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text 'containor'>
-          <div className='bg-gray-800 rounded-lg lg:text-2xl lg:w-1/3  justify-center relative z-10 font-custom9 "
-                style={{
-                  backgroundImage:
-                    "linear-gradient(to right,#8F41B4, #7D98A6, #50C355)",
-                }}
-              >{" "}
+                className=" text-transparent bg-clip-text font-custom9"
+                style={{ backgroundImage: "linear-gradient(to right,#8F41B4, #7D98A6, #50C355)", }}>
                 Unlock Special Utilities
               </span>
             </h4>
-            <p className="text-[#F8F7F5] lg:w-[60%] w-[78%]  text-left ">
+            <p className="text-[#F8F7F5] font-normal lg:w-[95%] text-justify pb-4 mt-16 w-[78%] leading-[34px] lg:text-[23px]">
               Introducing the Manga AI Membership NFT, your ticket to a world
               filled with exclusive utilities within the Manga AI ecosystem.
               This pass doesn't just give you instant access to utilities that
               are available now  – it's your key to a future filled with even
               more possibilities.
             </p>
-            <div className="mt-12">
-
-              <div className="  border-1 h-7  border-l border-fuchsia-700 rounded-full inline-block mb-2 mr-3 ml-1  float-left"></div>
-              <a className="text-neutral-100 text-xl font-bold underline leading-[34px] tracking-wide ">
+            <div className='flex items-center gap-x-5'>
+              <div className="lg:w-[3px] lg:h-[57px] bg-[#8F41B4]"></div>
+              <a className="text-[#F8F7F5] lg:text-[26px] w-fit underline underline-offset-8" href="/">
                 Discover More
               </a>
             </div>
           </div>
 
-          <div className="bg-main-gray-lighter w-fit rounded-lg pt-7 pb-3">
-            <div className="lg:pl-10 pl-5">
-              <h4 className="text-sm lg:text-xl font-custom9">
+          <div className="bg-main-gray-lighter w-fit rounded-lg lg:py-16 ml-16">
+            <div className="lg:pl-16 pl-5">
+              <h4 className="text-sm lg:text-[36px] font-custom9">
                 <span
-                  className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text 'containor '>
-                    <div className='bg-gray-800 rounded-lg lg:w-1/3 pl-5 justify-center relative z-10 font-custom9"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(to right, #8F41B4, #7D98A6, #50C355)",
-                  }}
-                >
-                  {" "}
+                  className="text-transparent bg-clip-text text-[36px] font-custom9"
+                  style={{ backgroundImage: "linear-gradient(to right, #8F41B4, #7D98A6, #50C355)", }}>
                   What You Get
                 </span>
               </h4>
 
-              <p className="text-[#F8F7F5] w-[60%] lg:text-w-[80%] text-justify pt-2 pb-7">
-                For just 0.1 BNB, you can secure this Membership
+              <p className="text-[#F8F7F5] font-nromal lg:w-[90%] w-[78%] leading-[34px] lg:text-[23px] text-justify mt-11 pb-3">
+                For just $MANGA worth 0.1 BNB, you can secure this Membership
                 NFT. Once you have it, you'll enjoy all the live utilities for
                 a year. That's a whole year of enhanced benefits. And if
                 you're loving what you're getting (we think you will), you can
                 simply mint another NFT after a year to keep enjoying those
                 special utilities.
               </p>
-              <div className="border-1 mt-1 h-7 border-l border-fuchsia-700 rounded-full inline-block mb-8 mr-3 ml-1  float-left"></div>
-              <a className=" text-neutral-100 text-xl  font-bold underline leading-[34px] tracking-wide  " href="/">
-                Mint Now
-              </a>
+              <div className='flex items-center gap-x-5 mt-10'>
+                <div className="lg:w-[3px] lg:h-[57px] bg-[#8F41B4]"></div>
+                <a className="text-[#F8F7F5] lg:text-[26px] w-fit underline underline-offset-8" href="/">
+                  Mint Now
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    )
+    </div>
+  )
 })
 
 export default MangaMainNft

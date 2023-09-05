@@ -17,54 +17,59 @@ const MangaMobiloe = () => {
           </span>
         </h1>
 
-        <div className="flex w-full gap-x-2">
-          <div className="flex flex-col gap-y-2 ">
-            <div className="bg-main-gray-lighter rounded-lg p-2">
-              <h4 className="text-[#88C48A] font-custom8  text-sm text-center">
+        <div className="flex flex-col gap-y-2 w-full gap-x-2">
+          <div className="flex gap-x-2 px-3">
+            <div className="bg-main-gray-lighter rounded-lg p-2 w-3/5">
+              <h4 className="text-[#88C48A] font-custom8  text-base text-center">
                 Staking
               </h4>
-              <p className="text-[#F8F7F5] text-justify  lg:text-base text-xs">
+              <p className="text-[#F8F7F5] mt-1 text-justify  text-[11px]">
                 MANGA token holders have the opportunity to actively engage with
                 the platform's growth through staking.
               </p>
-              <button className="rounded-md text-[#F8F7F5] mb-4 bg-gradient-to-r from-purple-600 to-green-500  p-2 font-medium flex justify-center m-auto lg:mt-4 mt-3 text-sm">
+              <button className="rounded-md text-[#F8F7F5] mb-4 bg-gradient-to-r from-purple-600 to-green-500  w-2/3  font-medium flex justify-center m-auto lg:mt-4 mt-3 text-[13px]">
                 Stake
               </button>
             </div>
+            <div className="bg-main-gray-lighter rounded-lg  p-2 w-2/5">
+              <h4 className="text-[#88C48A] text-center font-custom8 text-base">
+                $MANGA Burn
+              </h4>
+              <p className="text-[#F8F7F5] mt-1 text-justify text-[11px]">
+                The tokens utilized for NFT minting will be systematically
+                burned during our monthly Burn Event
+              </p>
+            </div>
 
-            <div className="bg-main-gray-lighter rounded-lg text-center p-2 pb-5">
-              <h4 className="text-[#88C48A] font-custom8 lg:text-2xl text-sm ">
+          </div>
+
+          <div className="flex gap-x-2 px-3">
+            <div className="bg-main-gray-lighter rounded-lg text-center p-2 pb-5 w-3/5">
+              <h4 className="text-[#88C48A] font-custom8  text-base ">
                 Governance
               </h4>
-              <p className="text-[#F8F7F5] text-justify lg:text-base text-xs ">
+              <p className="text-[#F8F7F5] mt-1 text-justify text-[11px] ">
                 Governance proposals, ranging from feature enhancements to
                 ecosystem expansion, are subject to voting by MANGA token
                 holders, ensuring a decentralized and community-driven approach
                 to platform evolution.
               </p>
             </div>
-          </div>
 
-          <div className="flex flex-col gap-y-2">
-            <div className="bg-main-gray-lighter rounded-lg  p-2 ">
-              <h4 className="text-[#88C48A] font-custom8 lg:text-2xl text-sm">
-                $MANGA Burn
-              </h4>
-              <p className="text-[#F8F7F5] text-justify lg:text-base text-xs">
-                The tokens utilized for NFT minting will be systematically
-                burned during our monthly Burn Event
-              </p>
-            </div>
-            <div className="bg-main-gray-lighter rounded-lg p-2">
-              <h4 className="text-[#88C48A] font-custom8   lg:text-2xl text-sm">
+            <div className="bg-main-gray-lighter rounded-lg p-2 w-2/5">
+              <h4 className="text-[#88C48A] font-custom8 text-center   text-base">
                 Minting NFTs
               </h4>
-              <p className="text-[#F8F7F5] text-justify lg:text-base text-xs">
+              <p className="text-[#F8F7F5] mt-1 text-justify text-[11px]">
                 Use Manga Tokens to mint exclusive Manga NFTs, securing your
                 ownership of anime art on the blockchain.
               </p>
-              <div className="border-1 h-6 border-purple-500 rounded-full inline-block float-left"></div>
-              <a className="text-[#F8F7F5] text-xs lg:text-base ml-2" href="/">Mint Now</a>
+              <div className='flex items-start gap-x-3 mt-3'>
+                <div className="w-[1.5px] h-[27px] bg-[#8F41B4]"></div>
+                <a className="text-[#F8F7F5] text-[13px] w-fit underline underline-offset-8" href="/">
+                  Mint Now
+                </a>
+              </div>
             </div>
           </div>
         </div>

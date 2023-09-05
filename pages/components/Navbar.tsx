@@ -23,7 +23,7 @@ const Navbar = ({nftRef,nftMobileRef,mangaRef,mangaMobileRef})=>{
 
             <div className="hamburger lg:hidden" onClick={() => setMenuOpen(!menuOpen)}>
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-                <path d="M3.60938 16.0781H17.3906M3.60938 10.8281H17.3906M3.60938 5.57812H17.3906" stroke="white" stroke-width="2.8125" stroke-linecap="round" strokeLinejoin="round" />
+                <path d="M3.60938 16.0781H17.3906M3.60938 10.8281H17.3906M3.60938 5.57812H17.3906" stroke="white" strokeWidth="2.8125" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
             <ul className={`hidden lg:flex h-fit !mb-0`} >
