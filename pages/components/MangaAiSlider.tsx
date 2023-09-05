@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 const MangaAiSlider = () => {
   return (
-    <div className='bg-gray-950 lg:pb-28 pb-14 relative md:hidden font-Lato'>
+    <div className='bg-main-gray lg:pb-28 pb-14 relative md:hidden font-Lato'>
     <h1 className=' w-fit m-auto pt-[20%]' >
         <span
         className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text 'containor'>
@@ -30,7 +30,7 @@ const MangaAiSlider = () => {
   <div className="carousel-slide " >
     {/* Content for the first slide */}
      
-    <div className='bg-gray-800 rounded-lg  pl-5 justify-center relative z-10 w-fit p-4 '>
+    <div className='bg-main-gray-lighter rounded-lg  pl-5 justify-center relative z-10 w-fit p-4 '>
                     <h1 className='text-green-500 justify-center lg:text-lg text-lg w-36 m-auto text-center pb-4'>
                     How it Works
                     </h1>
@@ -42,7 +42,7 @@ const MangaAiSlider = () => {
   </div>
   <div className="carousel-slide">
     {/* Content for the second slide */}
-    <div className='bg-gray-800 rounded-lg  pl-5 justify-center float-left  ml-5 relative z-10 w-fit p-4'>
+    <div className='bg-main-gray-lighter rounded-lg  pl-5 justify-center float-left  ml-5 relative z-10 w-fit p-4'>
                     <h1 className='text-green-500 justify-center lg:text-lg text-lg w-36 m-auto text-center pb-4'>
                     gems of Potential
                     </h1>
@@ -54,7 +54,7 @@ const MangaAiSlider = () => {
 
   <div className="carousel-slide">
     {/* Content for the third slide */}
-    <div className='bg-gray-800 rounded-lg  pl-5 justify-center ml-5 relative z-10 w-fit p-4'>
+    <div className='bg-main-gray-lighter rounded-lg  pl-5 justify-center ml-5 relative z-10 w-fit p-4'>
                     <h1 className='text-green-500 justify-center lg:text-lg text-lg w-40 m-auto text-center pb-4'>
                     Your Dedication Rewarded
                     </h1>
