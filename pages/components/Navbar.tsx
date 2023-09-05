@@ -1,8 +1,13 @@
 import React, { useState } from 'react'
+import { useHref } from 'react-router-dom';
 
 
-const Navbar = () => {
+const Navbar = ({nftRef,nftMobileRef,mangaRef,mangaMobileRef})=>{
   const [menuOpen, setMenuOpen] = useState(false);
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+    setMenuOpen(false); // Close the mobile menu after clicking a menu item
+  };
   return (
 
     <>
@@ -23,11 +28,11 @@ const Navbar = () => {
             </div>
             <ul className={`hidden lg:flex h-fit !mb-0`} >
               <li>Home</li>
-              <li>Manga Ai Bot</li>
-              <li>Manga NFT</li>
-              <li>$MANGA</li>
-              <li>Tutorial</li>
-              <li>Documentation</li>
+              <li><a className='-mt-2' href="https://t.me/mangaai_bot">Manga Ai Bot</a></li>
+              <li onClick={() => scrollToSection(nftRef)}>Manga NFT</li>
+              <li onClick={() => scrollToSection(mangaRef)}>$MANGA</li>
+              <li><a className='-mt-2' href=" https://youtu.be/SyNWls9tDMk">Tutorial</a></li>
+              <li><a className='-mt-2' href="https://manga-ai.gitbook.io/documentation/">Documentation</a></li>
             </ul>
           </div>
         </nav>
@@ -35,11 +40,11 @@ const Navbar = () => {
         <div className={`lg:hidden ${menuOpen ? 'block' : 'hidden'}`}>
           <ul className='bg-[#262420] absolute w-full text-[#F8F7F5] text-center text-base py-4 font-custom7'>
             <li className='py-3'>Home</li>
-            <li className='py-3'>Manga Ai Bot</li>
-            <li className='py-3'>Manga NFT</li>
-            <li className='py-3'>$MANGA</li>
-            <li className='py-3'>Tutorial</li>
-            <li className='py-3'>Documentation</li>
+            <li className='py-3'><a className='-mt-2' href="https://t.me/mangaai_bot">Manga Ai Bot</a></li>
+            <li className='py-3' onClick={() => scrollToSection(nftMobileRef)}>Manga NFT</li>
+            <li className='py-3' onClick={() => scrollToSection(mangaMobileRef)}>$MANGA</li>
+            <li className='py-3'><a className='-mt-2' href=" https://youtu.be/SyNWls9tDMk">Tutorial</a></li>
+            <li className='py-3'><a className='-mt-2' href="https://manga-ai.gitbook.io/documentation/">Documentation</a></li>
           </ul>
         </div>
       </div>

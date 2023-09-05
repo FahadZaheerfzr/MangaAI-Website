@@ -13,31 +13,31 @@ const TelegramBot = () => {
                   style={{ backgroundImage: 'linear-gradient(to right, #8F41B4, #7D98A6, #50C355)',}}>MANGA AI TELEGRAM BOT
                   </span>
                 </p>
-                <p className='text-[#F8F7F5] font-semibold text-center tracking-wide'>IS LIVE NOW</p>
-                <p className='text-[#F8F7F5] text-center m-auto lg:text-base text-xs w-72 lg:w-full'>Make fantastic anime artwork in just seconds with Manga AI's Ai Bot</p>
+                <p className='text-[#F8F7F5] font-semibold text-center tracking-wide mt-6 '>IS LIVE NOW</p>
+                <p className='text-[#F8F7F5] text-center m-auto lg:text-base text-xs w-72 lg:w-full mt-6'>Make fantastic anime artwork in just seconds with Manga AI's Ai Bot</p>
                 
-                <div className='flex '>
-                    <div className=' items-center  lg:w-96 relative lg:pl-8  mr-1'>
+                <div className='flex pl-20'>
+                    <div className=' items-center  lg:w-96 relative lg:pl-16  mr-1'>
                             <div >
                               <img className='w-32 lg:w-44 h-auto' src="./images/divs2.svg" alt="error" />
                             </div>                             
                     </div>
                     
 
-                  <div className='bg-[#473059]  rounded-3xl p-2 h-fit mt-[8%] flex w-48 lg:w-[40%] '>
+                  <div className='bg-[#473059]  rounded-3xl p-2 h-fit mt-[8%] w-48 lg:w-[40%] flex'>
                     <div className='m-auto flex lg:space-x-40 text-xs lg:text-lg space-x-12 '>
                         <div className='text-[#F8F7F5] leading-3 text-center  '>
-                            <h3 className='font-bold '>22</h3>
+                            <h3 className='font-bold text-2xl mt-1 mb-2'>22</h3>
                             <p >Total Users</p>
                         </div>
                         <div className='text-[#F8F7F5] text-center leading-3 lg:leading-6 '>
-                            <h3 className='font-bold '>500</h3>
-                            <p className='w-28' >Total images generated</p>
+                            <h3 className='font-bold text-2xl mt-1 mb-1'>500</h3>
+                            <p className='mb-2' >Total images generated</p>
                         </div>
                         </div>
                   </div>
 
-                  <div className=' items-center  lg:w-96 relative lg:pl-[7%] ml-1 mr-1'>
+                  <div className=' items-center  lg:w-96 relative lg:pl-[10%] ml-1 mr-1'>
                             <div >
                               <img className=' w-28 lg:w-40 h-auto' src="./images/divs3.svg" alt="error" />
                             </div> 
