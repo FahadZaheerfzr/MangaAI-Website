@@ -14,7 +14,7 @@ const MangaAI = () => {
         <div className='text-[#F8F7F5] leading-3 flex'>
           <div><p className=' rounded-full bg-[#573F6A] w-fit p-2 text-3xl mr-2 '><AiOutlineMail /></p></div>
           <div >
-             <p className='mb-2 '>Contact us at</p>
+            <p className='mb-2 '>Contact us at</p>
             <p className='underline'>Info@Mangaai.com</p></div>
         </div>
 
@@ -48,17 +48,17 @@ const MangaAI = () => {
 
       <div className=' lg:p-10 bg-main-purple-dark w-fit rounded-2xl m-auto lg:text-base text-sm p-3'>
         <h1 className='text-purple-400 text-3xl lg:text-4xl m-auto w-fit font-custom7'>Newsletter</h1>
-      
+
         <p className='text-[#F8F7F5] w-fit m-auto pt-3 pb-2'>Sign up for newsletter and join our tribe</p>
         <div className=" border border-neutral-100">
           <input type="text" className="focus:border-none focus:outline-none w-fit border-none px-8 py-3 bg-gray-700 text-zinc-400 text-xs font-medium" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="button-addon2" />
           <button className="btn btn-outline-secondary px-8 py-3 text-white text-sm font-bold" type="button" id="button-addon2">Subscribe</button>
-          
+
         </div>
-        
+
 
       </div>
-      
+
       <div className='p-3 pt-5 w-fit space-x-2 lg:space-x-5 m-auto'>
         <a className='text-[#F8F7F5] rounded-full bg-[#573F6A] text-2xl p-3 w-fit inline-block' href="/"><AiOutlineMail /></a>
         <a className='text-[#F8F7F5] rounded-full bg-[#573F6A] text-2xl p-3 w-fit inline-block' href="/"><AiOutlineTwitter /></a>
@@ -67,10 +67,12 @@ const MangaAI = () => {
         <a className='text-[#F8F7F5] rounded-full bg-[#573F6A] text-2xl p-3 w-fit inline-block' href="/"><AiOutlineInstagram /></a>
       </div>
       <div className=''>
-      <div className="ml-96 w-[700px]  border border-gray-200 "></div>
+        <div className="flex justify-center items-center">
+          <div className="w-[700px] border border-gray-200"></div>
+        </div>
       </div>
-     
-      
+
+
 
       <div className='w-full m-auto '>
         <div className='border-1 w-[40%] border-white rounded-full inline-block mb-8 mr-2 mt-1 ml-[30%] '></div>
