@@ -20,6 +20,7 @@ import BuyManga from './components/BuyManga'
 import { useRef } from 'react'
 import MangaNft from './components/MangaNft'
 import MangaMainNft from './components/MangaNftMain'
+import Head from 'next/head'
 const lato = Lato({
   subsets: ['latin'],
   weight: ['400', '700', '900']
@@ -34,6 +35,13 @@ export default function Home() {
   return (
 
     <main className={`main ${lato.className}`}>
+      <Head>
+        <title>
+        Manga AI - Transforming Anime Art with AI
+        </title>
+        <link rel="icon" href="/favicon.png" />
+        <meta name="description" content="Explore the future of anime artistry with Manga AI. Join our community, create stunning art, and embrace the power of AI. Get involved today!" />
+      </Head>
       <div className='w-full relative z-10'>
         <Navbar nftRef={nftRef} nftMobileRef={nftMobileRef} mangaRef={mangaRef} mangaMobileRef={mangaMobileRef}/>
       </div>

@@ -28,7 +28,7 @@ const Slider = () => {
         className="carousel-container"
         autoPlay={true} // Add auto-play
       >
-        <div className="carousel-slide ">
+        <div className="carousel-slide flex justify-center">
           {/* Content for the first slide */}
 
           <div className="bg-main-gray-lighter rounded-lg  pl-5 justify-center relative z-10 w-fit p-4 text-xs sm:text-base">
@@ -42,7 +42,7 @@ const Slider = () => {
             </p>
           </div>
         </div>
-        <div className="carousel-slide">
+        <div className="carousel-slide flex justify-center">
           {/* Content for the second slide */}
           <div className="bg-main-gray-lighter rounded-lg  pl-5 justify-center ml-5  z-10 w-fit p-4 text-xs sm:text-base">
             <h1 className="text-[#88C48A] justify-center sm:text-lg text-sm w-36 m-auto text-center pb-4">
@@ -56,7 +56,7 @@ const Slider = () => {
           </div>
         </div>
 
-        <div className="carousel-slide">
+        <div className="carousel-slide flex justify-center">
           {/* Content for the third slide */}
           <div className="bg-main-gray-lighter rounded-lg  pl-5 justify-center z-10 w-fit p-4 text-xs sm:text-base">
             <h1 className="text-[#88C48A] justify-center sm:text-lg text-sm  m-auto text-center pb-4">
@@ -70,7 +70,7 @@ const Slider = () => {
           </div>
         </div>
 
-        <div className="carousel-slide">
+        <div className="carousel-slide flex justify-center">
           {/* Content for the fourth slide */}
           <div className="bg-main-gray-lighter rounded-lg  pl-5 justify-center ml-5 relative z-10 w-fit p-4 text-xs sm:text-base">
             <h1 className="text-[#88C48A] justify-center sm:text-lg text-sm  m-auto text-center pb-4">

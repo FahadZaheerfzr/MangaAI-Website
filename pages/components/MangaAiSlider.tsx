@@ -27,7 +27,7 @@ const MangaAiSlider = () => {
   autoPlay={true} // Add auto-play
 >
     
-  <div className="carousel-slide " >
+  <div className="carousel-slide flex justify-center" >
     {/* Content for the first slide */}
      
     <div className='bg-main-gray-lighter rounded-lg  pl-5 justify-center relative z-10 w-fit p-4 '>
@@ -40,9 +40,9 @@ const MangaAiSlider = () => {
                 </div>
                      
   </div>
-  <div className="carousel-slide">
+  <div className="carousel-slide flex justify-center">
     {/* Content for the second slide */}
-    <div className='bg-main-gray-lighter rounded-lg  pl-5 justify-center float-left  ml-5 relative z-10 w-fit p-4'>
+    <div className='bg-main-gray-lighter rounded-lg  pl-5 justify-center float-left   relative z-10 w-fit p-4'>
                     <h1 className='text-green-500 justify-center lg:text-lg text-lg w-36 m-auto text-center pb-4'>
                     gems of Potential
                     </h1>
@@ -52,9 +52,9 @@ const MangaAiSlider = () => {
                 </div>
   </div>
 
-  <div className="carousel-slide">
+  <div className="carousel-slide flex justify-center">
     {/* Content for the third slide */}
-    <div className='bg-main-gray-lighter rounded-lg  pl-5 justify-center ml-5 relative z-10 w-fit p-4'>
+    <div className='bg-main-gray-lighter rounded-lg  pl-5 justify-center  relative z-10 w-fit p-4'>
                     <h1 className='text-green-500 justify-center lg:text-lg text-lg w-40 m-auto text-center pb-4'>
                     Your Dedication Rewarded
                     </h1>

@@ -23,35 +23,38 @@ const TelegramBot = () => {
         Make fantastic anime artwork in just seconds with Manga AI's Ai Bot
       </p>
 
-      <div className="flex gap-20 items-center w-full">
+      <div className="flex justify-center gap-x-5 lg:gap-20 items-center w-full">
         <div className=" ">
           <div>
             <img
-  className="w-full max-w-full"
-  src="./images/divs2.svg"
+              className="w-full max-w-full hidden lg:block"
+              src="./images/divs2.svg"
               alt="error"
             />
+            <img className="lg:hidden w-full" src="/images/mobile-telegram.svg" />
           </div>
         </div>
 
-        <div className="bg-[#473059] rounded-xl lg:rounded-[52px] py-4 lg:py-7 sm:px-10 px-2 md:px-20 lg:px-44  w-max justify-center gap-32 flex ">
-            <div className="text-[#F8F7F5] flex flex-col gap-1 text-center ">
-              <h3 className="font-black text-[32px] lg:text-[50px]">22</h3>
-              <p className="text-[#C28BEC] text-[6px] lg:text-xs font-medium leading-loose tracking-tight">Total Users</p>
-            </div>
-            <div className="text-[#F8F7F5] flex flex-col gap-1 text-center">
-              <h3 className="font-black text-[32px] lg:text-[50px]">500</h3>
-              <p className="text-[#C28BEC] text-[6px] lg:text-xs font-medium leading-loose tracking-tight">Total images generated</p>
-            </div>
+        <div className="bg-[#473059] rounded-xl lg:rounded-[52px] py-2 lg:py-7 sm:px-10 px-2 md:px-20 lg:px-44  w-max justify-center gap-16 lg:gap-32 flex ">
+          <div className="text-[#F8F7F5] flex flex-col gap-1 text-center ">
+            <h3 className="font-black text-[32px] lg:text-[50px]">22</h3>
+            <p className="text-[#C28BEC] text-[6px] lg:text-xs font-medium leading-loose tracking-tight">Total Users</p>
+          </div>
+          <div className="text-[#F8F7F5] flex flex-col gap-1 text-center">
+            <h3 className="font-black text-[32px] lg:text-[50px]">500</h3>
+            <p className="text-[#C28BEC] text-[6px] lg:text-xs font-medium leading-loose tracking-tight">Total images generated</p>
+          </div>
         </div>
 
-        <div className=" items-center   ">
+        <div className="items-center">
           <div>
             <img
-  className="w-full max-w-full"
-  src="./images/divs3.svg"
+              className="w-full max-w-full hidden lg:block"
+              src="./images/divs3.svg"
               alt="error"
             />
+            <img className="lg:hidden w-full" src="/images/mobile-telegram-1.svg" />
+
           </div>
         </div>
       </div>

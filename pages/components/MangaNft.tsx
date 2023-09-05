@@ -30,7 +30,7 @@ const MangaNft = React.forwardRef((props, ref) => {
               </h4>
 
               <p className='text-[#F8F7F5] lg:w-[60%] w-[88%] text-[11px] font-custom4 leading-[16px] text-justify'>
-                For just $MANGA worth 0.1 BNB, you can secure this Membership NFT. Once you have it, you'll enjoy all the live utilities for a year. That's a whole year of enhanced benefits. And if you're loving what you're getting (we think you will), you can simply mint another NFT after a year to keep enjoying those special utilities.
+                For just 0.1 BNB, you can secure this Membership NFT. Once you have it, you'll enjoy all the live utilities for a year. That's a whole year of enhanced benefits. And if you're loving what you're getting (we think you will), you can simply mint another NFT after a year to keep enjoying those special utilities.
               </p>
               <div className='flex items-center gap-x-3 mt-3'>
                 <div className="w-[1.5px] h-[27px] bg-[#8F41B4]"></div>

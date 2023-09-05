@@ -1,10 +1,11 @@
 import React from "react";
 import { IoMdCopy } from "react-icons/io";
-import { FaArrowRight, FaLinkedinIn } from "react-icons/fa";
+import { FaArrowRight, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import {
   AiOutlineMail,
   AiOutlineTwitter,
   AiOutlineInstagram,
+  AiFillMediumCircle,
 } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import { PiTelegramLogo } from "react-icons/pi";
@@ -83,7 +84,7 @@ const MangaAI = () => {
       </div>
 
       <div className="m-auto lg:pt-14 pt-10 lg: lg:text-base text-[6.9px]">
-        <nav className="bg-transparent border-b border-gray-200 ">
+        <nav className="bg-transparent mb-8 border-b border-gray-200 ">
           <ul className="flex flex-row lg:space-x-4 cursor-pointer -space-x-6 text-[9px] lg:text-[22px] font-semibold">
             <li className="text-[#F8F7F5]">Home</li>
             <li className="text-[#F8F7F5]">Manga Ai Bot</li>
@@ -93,12 +94,8 @@ const MangaAI = () => {
             <li className="text-[#F8F7F5]">Documentation</li>
           </ul>
         </nav>
-        <div className="lg:w-[633px] h-[0px] border border-gray-200"></div>
       </div>
 
-      <div className="w-full m-auto ">
-        <div className="border-1 lg:w-[50%] w-52 border-white rounded-full inline-block mb-10 mr-2 mt-3 lg:ml-[28%] m-20"></div>
-      </div>
 
       <div className=" lg:p-10 bg-main-purple-dark  rounded-2xl flex flex-col justify-center text-center w-max lg:text-base text-sm p-3 gap-1">
         <h1 className="text-[#A075B4] text-[17px] lg:text-[34px] font-bold  ">
@@ -129,13 +126,14 @@ const MangaAI = () => {
         <div className="p-3 pt-5  space-x-2 lg:space-x-5 ">
           <a
             className="text-[#F8F7F5] rounded-full bg-[#573F6A] text-2xl lg:text-3xl p-3  inline-block"
-            href="/"
+            href="mailto:Info@Mangaai.com"
           >
             <AiOutlineMail />
           </a>
           <a
             className="text-[#F8F7F5] rounded-full bg-[#573F6A] text-2xl lg:text-3xl  p-3  inline-block"
-            href="/"
+            href="https://twitter.com/MangaAIOfficial"
+            target="_blank"
           >
             <svg
               width="1em"
@@ -152,28 +150,31 @@ const MangaAI = () => {
           </a>
           <a
             className="text-[#F8F7F5] rounded-full bg-[#573F6A] text-2xl lg:text-3xl p-3  inline-block"
-            href="/"
+            href="https://www.youtube.com/channel/UC98dpH15kY6izTkj22CWGXQ"
+            target="_blank"
           >
-            <FaLinkedinIn />
+            {/* <FaLinkedinIn /> */}
+            <FaYoutube />
           </a>
           <a
             className="text-[#F8F7F5] rounded-full bg-[#573F6A] text-2xl lg:text-3xl p-3  inline-block"
-            href="/"
+            href=""
           >
             <FiGithub />
           </a>
           <a
             className="text-[#F8F7F5] rounded-full bg-[#573F6A] text-2xl lg:text-3xl p-3  inline-block"
-            href="/"
+            href="https://t.me/mangaaiofficial"
+            target="_blank"
           >
             {" "}
             <PiTelegramLogo />
           </a>
           <a
             className="text-[#F8F7F5] rounded-full bg-[#573F6A] text-2xl lg:text-3xl p-3  inline-block"
-            href="/"
+            href="https://medium.com/@mangaaiofficial"
           >
-            <AiOutlineInstagram />
+            <AiFillMediumCircle />
           </a>
         </div>
       </div>
