@@ -3,7 +3,7 @@ import React from 'react'
 const GetInvolved = () => {
   return (
  
-<div className='bg-main-gray pb-32 w-full h-full hidden lg:block font-Lato'>
+<div className='bg-main-gray pb-96 w-full h-full hidden lg:block font-Lato'>
             <h1 className=' w-fit m-auto pt-14 ' >
                 <span
                 className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text 'containor'>

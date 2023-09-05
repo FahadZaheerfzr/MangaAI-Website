@@ -28,7 +28,7 @@ const Manga = () => {
             </h4>
             <p className="text-[#F8F7F5] pb-4 lg:text-base text-xs w-48">MANGA token holders have the opportunity to actively engage with the platform's growth through staking.
             </p>
-            <button className="rounded-md text-[#F8F7F5] mb-4 bg-gradient-to-r from-purple-600 to-green-500 p-2 font-medium flex justify-center m-auto lg:mt-4 mt-3 w-44">
+            <button className="rounded-md text-[#F8F7F5] mb-4 bg-gradient-to-r from-fuchsia-700 via-slate-500 to-green-500 p-2 font-medium flex justify-center m-auto lg:mt-4 mt-3 w-44">
               Stake
             </button>
           </div>
@@ -39,11 +39,12 @@ const Manga = () => {
               id="child"
             >
               <h4 className="text-[#88C48A]  font-custom8 text-center">Governance</h4>
-              <p className="text-[#F8F7F5] pt-2 lg:text-base text-xs text-justify ">
+              <p className="text-[#F8F7F5] pt-2 lg:text-base text-xs text-justify mb-10 mt-2">
                 Governance proposals, ranging from feature enhancements to
                 ecosystem expansion, are subject to voting by MANGA token
                 holders, ensuring a decentralized and community-driven approach
-                to platform evolution.
+                to platform evolution. 
+            
               </p>
             </div>
             <div className="flex">
@@ -67,9 +68,9 @@ const Manga = () => {
                   Use Manga Tokens to mint exclusive Manga NFTs, securing your
                   ownership of anime art on the blockchain.
                 </p>
-                <div className="w-fit lg:m-auto ">
-                  <div className="border-1 h-7 border-purple-500 rounded-full inline-block mb-2 mr-2   float-left"></div>
-                  <a className="text-[#F8F7F5] " href="/">
+                <div className="mt-2 flex justify-center ">
+                  <div className="border-1 h-7 rounded-full inline-block mb-2 mr-2 border-l border-fuchsia-700   float-left  "></div>
+                  <a className="text-[#F8F7F5]  h-26 underline " href="/">
                     Mint Now
                   </a>
                 </div>
