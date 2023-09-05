@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const Slider = () => {
   return (
-    <div className="bg-main-gray md:hidden pb-10 flex flex-col justify-center items-center">
+    <div className="bg-main-gray md:hidden p-7 flex flex-col justify-center items-center relative">
       <h1 className="   ">
         <span
           className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text 'containor'"
@@ -16,7 +16,9 @@ const Slider = () => {
           Get Involved
         </span>
       </h1>
-      <img className=" absolute " src="./images/divw1.svg" alt="error" />
+      <img className=" absolute top-0" src="./images/divw1.svg" alt="error" />
+      <img className=" absolute bottom-0" src="./images/divw2.svg" alt="error" />
+
       <Carousel
         showArrows={true} // Show navigation arrows
         infiniteLoop={true} // Loop through the slides
