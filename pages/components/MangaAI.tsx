@@ -97,7 +97,7 @@ const MangaAI = () => {
       </div>
 
 
-      <div className=" lg:p-10 bg-main-purple-dark  rounded-2xl flex flex-col justify-center text-center w-max lg:text-base text-sm p-3 gap-1">
+      {/* <div className=" lg:p-10 bg-main-purple-dark  rounded-2xl flex flex-col justify-center text-center w-max lg:text-base text-sm p-3 gap-1">
         <h1 className="text-[#A075B4] text-[17px] lg:text-[34px] font-bold  ">
           Newsletter
         </h1>
@@ -121,7 +121,7 @@ const MangaAI = () => {
             Subscribe
           </button>
         </div>
-      </div>
+      </div> */}
       <div className="border-b border-gray-200 lg:px-20">
         <div className="p-3 pt-5  space-x-2 lg:space-x-5 ">
           <a
