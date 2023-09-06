@@ -13,7 +13,7 @@ const GetInvolved = () => {
             </h1>
             <img className=" absolute z-10 top-20 lg:block hidden " src="./images/divw1.svg" alt="error" />
             <img className=" absolute  top-[80%] lg:block hidden" src="./images/divw2.svg" alt="error" />
-      <div className='px-20 py-10 items-center justify-center  flex flex-col gap-4 z-0 w-10/12'>
+      <div className='px-20 py-10 items-center justify-center  flex flex-col gap-4 w-10/12 relative z-10'>
             
                   <div className='flex gap-4'>
                           <div className='bg-main-gray-lighter   p-8 rounded-3xl   justify-center relative z-10 w-1/2  lg:px-16  gap-4 flex flex-col'>
