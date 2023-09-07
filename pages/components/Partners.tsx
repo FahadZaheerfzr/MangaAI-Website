@@ -15,83 +15,59 @@ const Partners = () => {
           Partners and Supporters
         </span>
       </h1>
-
-      <div className="text-[#F8F7F5] flex lg:space-x-12 space-x-4 mt-5  uppercase">
-        <div className="flex flex-col gap-2 items-center text-center w-max">
+      <div className="text-[#F8F7F5] flex lg:space-x-12 space-x-4 mt-5  uppercase  ">
+        <div className="flex flex-col gap-2 items-center text-center w-max justify-between">
           <img
             className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
-            src="./images/divt1.svg "
+            src="./images/roburna.svg "
             alt="error"
           />
-          <p className=" lg:text-base text-[4px] ">Fendi</p>
-        </div>
-
-        <div className="flex flex-col gap-2 items-center text-center w-max">
-          <img
-            className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
-            src="./images/divt2.svg "
-            alt="error"
-          />
-          <p className=" lg:text-base text-[4px] ">Mesh.Ai</p>
-        </div>
-
-        <div className="flex flex-col gap-2 items-center text-center w-max">
-          <img
-            className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
-            src="./images/divt3.svg "
-            alt="error"
-          />
-          <p className="  lg:textbasee text-[4px] w-8 lg:w-20">
-            luffy token exchange
+          <p className=" lg:text-base text-[4px] ">
+            <a href="https://roburna.com/labs">Roburna</a>
           </p>
         </div>
 
-        <div className="flex flex-col gap-2 items-center text-center w-max">
+        <div className="flex flex-col gap-2 items-center text-center w-max justify-between">
           <img
             className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
-            src="./images/divt4.svg "
+            src="./images/arborswap.svg"
             alt="error"
           />
-          <p className=" lg:text-base text-[4px]  ">Fendi</p>
-        </div>
-
-        <div className="flex flex-col gap-2 items-center text-center w-max">
-          <img
-            className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
-            src="./images/divt5.svg "
-            alt="error"
-          />
-          <p className=" lg:text-base text-[4px] ">Mesh.Ai</p>
-        </div>
-
-        <div className="flex flex-col gap-2 items-center text-center w-max">
-          <img
-            className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
-            src="./images/divt6.svg "
-            alt="error"
-          />
-          <p className=" lg:text-base text-[4px]  w-8 lg:w-20 ">
-            luffy token exchange
+          <p className=" lg:text-base text-[4px] ">
+            <a href="https://www.arborswap.org/">Arbor Swap</a>
           </p>
         </div>
 
-        <div className="flex flex-col gap-2 items-center text-center w-max">
+        <div className="flex flex-col gap-2 items-center text-center w-max justify-between">
           <img
             className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
-            src="./images/divt7.svg "
+            src="./images/dextools.svg "
             alt="error"
           />
-          <p className=" lg:text-base text-[4px] ">Mesh.Ai</p>
+          <p className="  lg:text-base text-[4px] w-8 lg:w-20">
+            <a href="https://www.dextools.io/app">Dextools</a>
+          </p>
         </div>
 
-        <div className="flex flex-col gap-2 items-center text-center w-max">
+        <div className="flex flex-col gap-2 items-center text-center w-max justify-between">
           <img
             className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
-            src="./images/divt8.svg "
+            src="./images/bscscan.svg "
             alt="error"
           />
-          <p className=" lg:text-base text-[4px]  lg:w-20 w-8">
-            luffy token exchange
+          <p className=" lg:text-base text-[4px]  ">
+            <a href="https://bscscan.com/">Bscscan</a>
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-2 items-center text-center w-max justify-between">
+          <img
+            className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
+            src="./images/valhalla.svg "
+            alt="error"
+          />
+          <p className=" lg:text-base text-[4px] ">
+            <a href="https://twitter.com/ValhallaMKTN">Valhalla</a>
           </p>
         </div>
       </div>
