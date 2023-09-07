@@ -32,7 +32,7 @@ const WhyChooseSlider = () => {
                     <p className='text-[#F8F7F5] w-64 m-auto px-7 text-justify pb-5 font-custom4 text-[11px] leading-[16px]'>
                     Our AI-powered platform give you the freedom to bring your anime visions to life. From character designs to background art, you're in control of every detail.
                     </p>
-                    <button className="rounded-[13px] text-white bg-gradient-to-r from-purple-500 to-green-500 p-2 flex m-auto lg:mt-4 text-[13px] px-4 py-2 mt-3 font-custom7">Generate Anime Art </button>
+                    <button className="rounded-[13px] text-white bg-gradient-to-r from-purple-500 to-green-500 p-2 flex m-auto lg:mt-4 text-[13px] px-4 py-2 mt-3 font-custom7"><a href="https://t.me/mangaaiofficial">Generate Anime Art</a></button>
                 </div>
                      
   </div>
@@ -45,7 +45,7 @@ const WhyChooseSlider = () => {
                     <p className='text-[#F8F7F5] w-64 m-auto px-7 text-justify pb-5 font-custom4 text-[11px] leading-[16px]'>
                     Connect with fellow creators, enthusiasts,  and  industry professionals in an environment designed to foster collaboration and innovation.
                     </p>
-                    <button className="rounded-[13px] text-white bg-gradient-to-r from-purple-500 to-green-500 p-2 flex m-auto lg:mt-4 text-[13px] px-4 py-2 mt-3 font-custom7">Generate Anime Art </button>
+                    <button className="rounded-[13px] text-white bg-gradient-to-r from-purple-500 to-green-500 p-2 flex m-auto lg:mt-4 text-[13px] px-4 py-2 mt-3 font-custom7"><a href="https://t.me/mangaaiofficial">Generate Anime Art</a> </button>
                 </div>
   </div>
 
@@ -58,7 +58,7 @@ const WhyChooseSlider = () => {
                     <p className='text-[#F8F7F5] w-64 m-auto text-justify pb-3 font-custom4 text-[11px] px-7 leading-[16px]'>
                     Experience the excellence of professional-grade animation. Our tools streamline the production process, ensuring that your creations are visually captivating and emotionally resonant.
                     </p>
-                    <button className="rounded-[13px] text-white bg-gradient-to-r from-purple-500 to-green-500 p-2 flex m-auto lg:mt-4 text-[13px] px-4 py-2 mt-3 font-custom7">Generate Anime Art </button>
+                    <button className="rounded-[13px] text-white bg-gradient-to-r from-purple-500 to-green-500 p-2 flex m-auto lg:mt-4 text-[13px] px-4 py-2 mt-3 font-custom7"><a href="https://t.me/mangaaiofficial">Generate Anime Art</a></button>
                 </div>
   </div> 
 </Carousel>

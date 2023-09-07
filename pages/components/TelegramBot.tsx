@@ -37,11 +37,11 @@ const TelegramBot = () => {
 
         <div className="bg-[#473059] rounded-xl lg:rounded-[52px] py-2 lg:py-7 sm:px-10 px-2 md:px-20 lg:px-44  w-max justify-center gap-16 lg:gap-32 flex ">
           <div className="text-[#F8F7F5] flex flex-col gap-1 text-center ">
-            <h3 className="font-black text-[32px] lg:text-[50px]">22</h3>
+            <h3 className="font-black text-[32px] lg:text-[50px]">100</h3>
             <p className="text-[#C28BEC] text-[6px] lg:text-xs font-medium leading-loose tracking-tight">Total Users</p>
           </div>
           <div className="text-[#F8F7F5] flex flex-col gap-1 text-center">
-            <h3 className="font-black text-[32px] lg:text-[50px]">500</h3>
+            <h3 className="font-black text-[32px] lg:text-[50px]">5583</h3>
             <p className="text-[#C28BEC] text-[6px] lg:text-xs font-medium leading-loose tracking-tight">Total images generated</p>
           </div>
         </div>

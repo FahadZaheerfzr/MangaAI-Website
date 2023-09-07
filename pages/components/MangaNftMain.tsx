@@ -28,7 +28,7 @@ const MangaMainNft = React.forwardRef((props, ref) => {
             </p>
             <div className='flex items-center gap-x-5'>
               <div className="lg:w-[3px] lg:h-[57px] bg-[#8F41B4]"></div>
-              <a className="text-[#F8F7F5] lg:text-[26px] w-fit underline underline-offset-8" href="/">
+              <a className="text-[#F8F7F5] lg:text-[26px] w-fit underline underline-offset-8" href="https://manga-ai.gitbook.io/documentation/manga-ai-nfts/manga-ai-membership-nfts-usecase">
                 Discover More
               </a>
             </div>

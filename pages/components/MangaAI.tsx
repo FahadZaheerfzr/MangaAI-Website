@@ -9,7 +9,18 @@ import {
 } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import { PiTelegramLogo } from "react-icons/pi";
-const MangaAI = () => {
+import { useState } from "react";
+
+const MangaAI = ({ nftRef, mangaRef, homeref }) => {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+  const scrollToSection = (ref) => {
+    ref?.current?.scrollIntoView({ behavior: 'smooth' });
+    setMenuOpen(false); // Close the mobile menu after clicking a menu item
+  };
+
+
+
   return (
     <div className="bg-main-purple w-full pb-3 font-Lato flex flex-col justify-center items-center gap-2">
       <h1 className="text-[#A075B4] text-[100px] lg:text-[300px] m-auto   ">
@@ -61,8 +72,9 @@ const MangaAI = () => {
           <div>
             <p className="text-[6px] lg:text-base font-medium">Contact us at</p>
             <p className="lg:text-lg text-[9px] font-bold underline">
-              Info@Mangaai.com
+              <a href="mailto:Info@Mangaai.com">Info@Mangaai.com</a>
             </p>
+
           </div>
         </div>
 
@@ -86,12 +98,12 @@ const MangaAI = () => {
       <div className="m-auto lg:pt-14 pt-10 lg: lg:text-base text-[6.9px]">
         <nav className="bg-transparent mb-8 border-b border-gray-200 ">
           <ul className="flex flex-row lg:space-x-4 cursor-pointer -space-x-6 text-[9px] lg:text-[22px] font-semibold">
-            <li className="text-[#F8F7F5]">Home</li>
-            <li className="text-[#F8F7F5]">Manga Ai Bot</li>
-            <li className="text-[#F8F7F5]">Manga NFT</li>
-            <li className="text-[#F8F7F5]">$MANGA</li>
-            <li className="text-[#F8F7F5]">Tutorial</li>
-            <li className="text-[#F8F7F5]">Documentation</li>
+            <li onClick={() => scrollToSection(homeref)} className="text-[#F8F7F5]">Home</li>
+            <a className='mt-4' href="https://t.me/mangaai_bot">Manga Ai Bot</a>
+            <li onClick={() => scrollToSection(nftRef)}>Manga NFT</li>
+            <li onClick={() => scrollToSection(mangaRef)}>$MANGA</li>
+            <li><a className='-mt-2' href=" https://youtu.be/SyNWls9tDMk">Tutorial</a></li>
+            <li><a className='-mt-2' href="https://manga-ai.gitbook.io/documentation/">Documentation</a></li>
           </ul>
         </nav>
       </div>

@@ -40,7 +40,7 @@ const WhyChoose = () => {
                   {card.description}
                 </p>
                 <button className="rounded-md text-[#F8F7F5] bg-gradient-to-r from-purple-500 to-green-500 px-4 py-1 lg:text-[26px]  flex m-auto lg:mt-4 mt-3 ">
-                  Generate Anime Art{" "}
+                <a href="https://t.me/mangaaiofficial">Generate Anime Art</a>{" "}
                 </button>
               </div> ))}
             </div>

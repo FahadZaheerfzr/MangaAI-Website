@@ -27,7 +27,7 @@ const Manga = () => {
               <p className="text-[#F8F7F5] pb-4 lg:text-[23px] leading-[34px] tracking-[0.46px] text-xs w-64 mt-7">MANGA token holders have the opportunity to actively engage with the platform's growth through staking.
               </p>
               <button className="rounded-md text-white mb-4 bg-gradient-to-r from-purple-600 to-green-500 font-medium flex justify-center m-auto lg:mt-4 mt-3 w-[90%] py-1 text-[26px]">
-                Stake
+              <a href="https://www.arborswap.org/pools">Stake</a>
               </button>
             </div>
 

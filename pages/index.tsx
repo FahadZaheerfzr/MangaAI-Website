@@ -31,22 +31,25 @@ export default function Home() {
   const nftMobileRef = useRef(null)
   const mangaRef = useRef(null)
   const mangaMobileRef = useRef(null)
+  const homeref = useRef(null)
 
   return (
 
     <main className={`main ${lato.className}`}>
       <Head>
         <title>
-        Manga AI - Transforming Anime Art with AI
+          Manga AI - Transforming Anime Art with AI
         </title>
         <link rel="icon" href="/favicon.png" />
         <meta name="description" content="Explore the future of anime artistry with Manga AI. Join our community, create stunning art, and embrace the power of AI. Get involved today!" />
       </Head>
       <div className='w-full relative z-10'>
-        <Navbar nftRef={nftRef} nftMobileRef={nftMobileRef} mangaRef={mangaRef} mangaMobileRef={mangaMobileRef}/>
+        <Navbar nftRef={nftRef} nftMobileRef={nftMobileRef} mangaRef={mangaRef} mangaMobileRef={mangaMobileRef} />
+      </div>
+      <div ref={homeref}>
+        <FirstMangaAI />
       </div>
 
-      <FirstMangaAI />
       <BuyManga />
       <WhyChooseSlider />
       <WhyChoose />
@@ -83,7 +86,7 @@ export default function Home() {
       <Slider />
       <GetInvolved />
 
-      <MangaAI />
+      <MangaAI nftRef={nftRef} nftMobileRef={nftMobileRef} mangaRef={mangaRef} homeref={homeref} />
     </main>
   )
 }
