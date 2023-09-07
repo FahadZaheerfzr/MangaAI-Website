@@ -1,6 +1,18 @@
 import React from "react";
 import { FaArrowRight, FaLinkedinIn } from "react-icons/fa";
 
+const images = [
+  "./images/img1.png",
+  "./images/img2.png",
+  "./images/img3.png",
+  "./images/img4.png",
+  "./images/img5.png",
+  "./images/img6.png",
+  "./images/img7.png",
+  "./images/img8.png",
+  "./images/img9.png",
+]
+
 const AIComunity = () => {
   return (
     <div className="bg-main-gray flex flex-col py-10 font-Lato items-center gap-10 lg:px-10">
@@ -21,7 +33,13 @@ const AIComunity = () => {
         created by our skilled community using our AI technology.
       </p>
       <div className="">
-        <img className="" src="./images/divu1.svg" alt="error" />
+        <div className="grid grid-cols-3 gap-3">
+          {images.map((image, index) => (
+            <div key={index} className="relative">
+              <img className="w-full" src={image} alt="error" />
+              </div>
+          ))}
+          </div>
       </div>
 
       <button className="rounded-[13px] text-[#F8F7F5] bg-gradient-to-r from-fuchsia-700 via-slate-500 to-green-500 py-1 lg:py-4 flex text-[13px] font-bold leading-[34px] tracking-tight w-max gap-10 items-center px-10 lg:text-[26px]">

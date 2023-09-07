@@ -28,7 +28,7 @@ const Navbar = ({nftRef,nftMobileRef,mangaRef,mangaMobileRef})=>{
             </div>
             <ul className={`hidden lg:flex h-fit !mb-0`} >
               <li>Home</li>
-              <li><a className='-mt-2' href="https://t.me/mangaai_bot">Manga Ai Bot</a></li>
+              <li><a className='-mt-2 ' href="https://t.me/mangaai_bot">Manga Ai Bot</a></li>
               <li onClick={() => scrollToSection(nftRef)}>Manga NFT</li>
               <li onClick={() => scrollToSection(mangaRef)}>$MANGA</li>
               <li><a className='-mt-2' href=" https://youtu.be/SyNWls9tDMk">Tutorial</a></li>
