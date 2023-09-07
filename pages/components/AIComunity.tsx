@@ -25,7 +25,7 @@ const AIComunity = () => {
       </div>
 
       <button className="rounded-[13px] text-[#F8F7F5] bg-gradient-to-r from-fuchsia-700 via-slate-500 to-green-500 py-1 lg:py-4 flex text-[13px] font-bold leading-[34px] tracking-tight w-max gap-10 items-center px-10 lg:text-[26px]">
-        <p>Create Your Anime Art Now</p> <FaArrowRight />
+        <a href="https://t.me/mangaaiofficial">Create Your Anime Art Now</a> <FaArrowRight />
       </button>
     </div>
   );

@@ -17,7 +17,7 @@ const MangaNft = React.forwardRef((props, ref) => {
             <p className='text-[#F8F7F5] lg:w-[60%] w-[88%] text-[11px] font-custom4 leading-[16px] text-justify'>Introducing the Manga AI Membership NFT, your ticket to a world filled with exclusive utilities within the Manga AI ecosystem. This pass doesn't just give you instant access to utilities that are available now  – it's your key to a future filled with even more possibilities.</p>
             <div className='flex items-center gap-x-3 mt-3'>
               <div className="w-[1.5px] h-[27px] bg-[#8F41B4]"></div>
-              <a className="text-[#F8F7F5] text-[13px] lg:text-[26px] w-fit underline underline-offset-8" href="/">
+              <a className="text-[#F8F7F5] text-[13px] lg:text-[26px] w-fit underline underline-offset-8" href="https://manga-ai.gitbook.io/documentation/manga-ai-nfts/manga-ai-membership-nfts-usecase">
                 Discover More
               </a>
             </div>
