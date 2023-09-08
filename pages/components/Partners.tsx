@@ -16,7 +16,7 @@ const Partners = () => {
         </span>
       </h1>
       <div className="text-[#F8F7F5] flex lg:space-x-12 space-x-4 mt-5  uppercase  ">
-        <div className="flex flex-col gap-2 items-center text-center w-max justify-between">
+        <div className="flex flex-col gap-2 items-center text-center w-max  justify-between ">
           <img
             className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
             src="./images/roburna.svg "
@@ -27,7 +27,7 @@ const Partners = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-2 items-center text-center w-max justify-between">
+        <div className="flex flex-col gap-2 items-center text-center w-max  justify-between">
           <img
             className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
             src="./images/arborswap.svg"
@@ -38,9 +38,9 @@ const Partners = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-2 items-center text-center w-max justify-between">
+        <div className="flex flex-col gap-2 items-center text-center w-max  justify-between">
           <img
-            className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
+            className="xl:w-32 lg:w-20 w-8 mt-10 justify-center uppercase"
             src="./images/dextools.svg "
             alt="error"
           />
@@ -49,9 +49,9 @@ const Partners = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-2 items-center text-center w-max justify-between">
+        <div className="flex flex-col gap-2 items-center text-center w-max  justify-between">
           <img
-            className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
+            className="xl:w-32 lg:w-20 w-8 mt-10 justify-center uppercase"
             src="./images/bscscan.svg "
             alt="error"
           />
@@ -60,7 +60,7 @@ const Partners = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-2 items-center text-center w-max justify-between">
+        <div className="flex flex-col gap-2 items-center text-center w-max  justify-between">
           <img
             className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
             src="./images/valhalla.svg "
