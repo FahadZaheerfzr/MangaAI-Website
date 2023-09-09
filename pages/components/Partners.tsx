@@ -17,58 +17,71 @@ const Partners = () => {
       </h1>
       <div className="text-[#F8F7F5] flex lg:space-x-12 space-x-4 mt-5  uppercase  ">
         <div className="flex flex-col gap-2 items-center text-center w-max  justify-between ">
-          <img
-            className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
-            src="./images/roburna.svg "
-            alt="error"
-          />
-          <p className=" lg:text-base text-[4px] ">
+          <a href="https://roburna.com/labs">
+            <img
+              className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
+              src="./images/roburna.svg "
+              alt="roburna"
+            />
+          </a>
+          {/* <p className=" lg:text-base text-[4px] ">
             <a href="https://roburna.com/labs">Roburna</a>
-          </p>
+          </p> */}
         </div>
 
         <div className="flex flex-col gap-2 items-center text-center w-max  justify-between">
-          <img
-            className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
-            src="./images/arborswap.svg"
-            alt="error"
-          />
-          <p className=" lg:text-base text-[4px] ">
+          <a href="https://www.arborswap.org/">
+            <img
+              className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
+              src="./images/arborswap.svg"
+              alt="Arborswap"
+            />
+          </a>
+          {/* <p className=" lg:text-base text-[4px] ">
             <a href="https://www.arborswap.org/">Arbor Swap</a>
-          </p>
+          </p> */}
         </div>
 
         <div className="flex flex-col gap-2 items-center text-center w-max  justify-between">
-          <img
-            className="xl:w-32 lg:w-20 w-8 mt-10 justify-center uppercase"
-            src="./images/dextools.svg "
-            alt="error"
-          />
-          <p className="  lg:text-base text-[4px] w-8 lg:w-20">
+          <a href="https://www.dextools.io/app">
+            {" "}
+            <img
+              className="xl:w-32 lg:w-20 w-8 mt-10 justify-center uppercase"
+              src="./images/dextools.svg "
+              alt="Dextools"
+            />
+          </a>
+          {/* <p className="  lg:text-base text-[4px] w-8 lg:w-20">
             <a href="https://www.dextools.io/app">Dextools</a>
-          </p>
+          </p> */}
         </div>
 
         <div className="flex flex-col gap-2 items-center text-center w-max  justify-between">
-          <img
-            className="xl:w-32 lg:w-20 w-8 mt-10 justify-center uppercase"
-            src="./images/bscscan.svg "
-            alt="error"
-          />
-          <p className=" lg:text-base text-[4px]  ">
+          <a href="https://bscscan.com/">
+            {" "}
+            <img
+              className="xl:w-32 lg:w-20 w-8 mt-10 justify-center uppercase"
+              src="./images/bscscan.svg "
+              alt="Bscscan"
+            />
+          </a>
+          {/* <p className=" lg:text-base text-[4px]  ">
             <a href="https://bscscan.com/">Bscscan</a>
-          </p>
+          </p> */}
         </div>
 
         <div className="flex flex-col gap-2 items-center text-center w-max  justify-between">
-          <img
-            className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
-            src="./images/valhalla.svg "
-            alt="error"
-          />
-          <p className=" lg:text-base text-[4px] ">
+          <a href="https://twitter.com/ValhallaMKTN">
+            {" "}
+            <img
+              className="xl:w-32 lg:w-20 w-8 justify-center uppercase"
+              src="./images/valhalla.svg "
+              alt="Valhalla"
+            />
+          </a>
+          {/* <p className=" lg:text-base text-[4px] ">
             <a href="https://twitter.com/ValhallaMKTN">Valhalla</a>
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

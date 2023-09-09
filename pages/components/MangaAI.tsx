@@ -72,7 +72,7 @@ const MangaAI = ({ nftRef, mangaRef, homeref }) => {
           <div>
             <p className="text-[6px] lg:text-base font-medium">Contact us at</p>
             <p className="lg:text-lg text-[9px] font-bold underline">
-              <a href="mailto:Info@Mangaai.com">Info@Mangaai.com</a>
+              <a href="mailto:info@mangaai.org">info@mangaai.org</a>
             </p>
 
           </div>

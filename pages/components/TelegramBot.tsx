@@ -60,8 +60,8 @@ const TelegramBot = () => {
       </div>
 
       <img
-        className="  left-1/2 -translate-x-1/2 md:w-[50%] w-[70%] absolute -bottom-10 lg:-bottom-56 z-20"
-        src="./images/divs4.svg"
+        className=" left-1/2 -translate-x-1/2 w-full max-w-md md:max-w-2xl lg:max-w-6xl -bottom-1/2 absolute  z-20"
+        src="./images/sharp mock up.png"
         alt="error"
       />
     </div>
