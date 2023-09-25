@@ -1,10 +1,20 @@
 import React from 'react'
 import { useState } from 'react'
 import { IoMdCopy } from 'react-icons/io'
+import { useModal } from "react-simple-modal-provider";
+import { useEthers } from "@usedapp/core";
+import ABI from "../config/abis/abi.json"
+import { ethers } from "ethers";
+import {contractAddress} from "../config/constants"
+import { Contract } from "@ethersproject/contracts";
+
 
 export default function BuyManga() {
   const [copySuccess, setCopySuccess] = useState(false);
-  const inputText = '0x754E56Ce07ae030a02b5f3977Eee86C3841E4f0D';
+  const {account,library} = useEthers();
+  const inputText = '0xdA022bf4402F3eDF32B02356056400E8d7eF5522';
+  const { open: openModal } = useModal("ConnectionModal");
+
 
   const copyTextToClipboard = () => {
     navigator.clipboard.writeText(inputText)
@@ -15,6 +25,24 @@ export default function BuyManga() {
       setCopySuccess(false);
     }, 2000);
   };
+
+  const mint = async () => {
+    if(!account){
+      openModal();
+      return;
+    }
+
+    // const Contract
+    const contract = new Contract  (contractAddress, ABI, library.getSigner());
+    try {
+      const tx = await contract.Mint(account);
+      await tx.wait();
+    }
+    catch (e) {
+      console.log(e);
+    }
+
+  }
   return (
     <div className='bg-[#2E2238] flex flex-col gap-10 items-center justify-center  lg:pt-24 pt-32 pb-10'>
       <div className='w-full flex justify-center'>
@@ -28,7 +56,7 @@ export default function BuyManga() {
         </div>
         <input defaultValue={inputText} className='w-2/3 max-w-[660px] pl-20 lg:text-[23px] tracking-[0.46px] lg:py-3 text-[#FFF] rounded-[14px] bg-transparent border py-3 px-3 border-dashed border-[#F8F7F5]' />
       </div>
-      <button className="text-center lg:py-4 lg:px-8 px-3 py-1 text-neutral-100 lg:text-[26px] text-[13px] font-bold leading-[34px] tracking-[0.52px]  bg-gradient-to-r from-fuchsia-700 via-slate-500 to-green-500 rounded-[13px]" >
+      <button onClick={mint} className="text-center lg:py-4 lg:px-8 px-3 py-1 text-neutral-100 lg:text-[26px] text-[13px] font-bold leading-[34px] tracking-[0.52px]  bg-gradient-to-r from-fuchsia-700 via-slate-500 to-green-500 rounded-[13px]" >
         Buy $Manga
       </button>
       {copySuccess && <p className="text-white">Copy Successful!</p>}

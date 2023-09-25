@@ -10,15 +10,20 @@
   },
   "dependencies": {
     "@types/react-dom": "18.2.7",
+    "@usedapp/core": "^1.2.13",
+    "@walletconnect/web3-provider": "^1.8.0",
     "autoprefixer": "10.4.15",
     "bootstrap": "^5.3.1",
+    "moralis": "^2.23.1",
     "next": "13.4.19",
     "postcss": "8.4.28",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
+    "react-moralis": "^1.4.2",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.15.0",
+    "react-simple-modal-provider": "^1.9.0",
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {
