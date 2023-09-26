@@ -55,7 +55,7 @@ export default function BuyManga() {
     const contract = new Contract(contractAddress, ABI, library.getSigner());
     try{
       const balance = await contract.balanceOf(account)
-      if (parseFloat(ethers.utils.formatEther(balance)) === 0) {
+      if (parseFloat(ethers.utils.formatEther(balance)) > 0) {
         // get membership
         const response = await fetch(`${BACKEND_URL}add-member?username=${telegram}&address=${account}`, {
           method: 'POST',
