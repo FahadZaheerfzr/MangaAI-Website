@@ -1,6 +1,36 @@
-import React from 'react'
+import React from "react";
+import { useState } from 'react'
+import { useModal } from "react-simple-modal-provider";
+import { useEthers } from "@usedapp/core";
+import ABI from "../config/abis/abi.json"
+import {contractAddress,BACKEND_URL} from "../config/constants"
+import { Contract } from "@ethersproject/contracts";
+import { ethers } from "ethers";
 
 const MangaNft = React.forwardRef((props, ref) => {
+  const {account,library} = useEthers();
+  const inputText = '0xdA022bf4402F3eDF32B02356056400E8d7eF5522';
+  const { open: openModal } = useModal("ConnectionModal");
+ 
+  const mint = async () => {
+    if(!account){
+      openModal();
+      return;
+    }
+  
+
+    // const Contract
+    const contract = new Contract(contractAddress, ABI, library.getSigner());
+    try {
+      const tx = await contract.Mint(account);
+      await tx.wait();
+    }
+    catch (e) {
+      console.log(e);
+    }
+
+  }
+
   return (
     <div className='w-full lg:hidden'>
       <div className='w-full'>
@@ -34,7 +64,7 @@ const MangaNft = React.forwardRef((props, ref) => {
               </p>
               <div className='flex items-center gap-x-3 mt-3'>
                 <div className="w-[1.5px] h-[27px] bg-[#8F41B4]"></div>
-                <a className="text-[#F8F7F5] text-[13px] lg:text-[26px] w-fit underline underline-offset-8" href="/">
+                <a onClick={mint} className="text-[#F8F7F5] text-[13px] lg:text-[26px] w-fit underline underline-offset-8" href="/">
                   Mint Now
                 </a>
               </div>
