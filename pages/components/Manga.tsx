@@ -13,23 +13,30 @@ const Manga = () => {
   const { open: openModal } = useModal("ConnectionModal");
  
   const mint = async () => {
-    if(!account){
+    if (!account) {
       openModal();
       return;
     }
-  
+
 
     // const Contract
     const contract = new Contract(contractAddress, ABI, library.getSigner());
+
+    const mintAmount =  await contract.mintPriceInWei();
     try {
-      const tx = await contract.Mint(account);
-      await tx.wait();
-    }
+      const tx = await contract.Mint(account, { value: (mintAmount.toString()) }).then((tx) => {
+        console.log(tx);
+      }).catch((err) => {
+        console.log(err.message);
+        alert(`Transaction Failed. Ensure you have ${ethers.utils.formatEther(mintAmount.toString())} BNB to cover the transaction fee.`);
+      });
+  }
     catch (e) {
       console.log(e);
     }
 
   }
+
   return (
     <>
       <div
