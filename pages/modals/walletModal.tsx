@@ -27,6 +27,8 @@ export default function ConnectionModal({ children }) {
   }
 
   const onMetamask = async () => {
+    console.log(chainId, BSC.chainId)
+
     try {
       activateBrowserWallet()
       if(chainId !== BSC.chainId){
@@ -48,10 +50,10 @@ export default function ConnectionModal({ children }) {
     <Modal id={'ConnectionModal'} consumer={children} isOpen={isOpen} setOpen={setOpen} allowClickOutside={false}>
       <div className="p-9 w-[90%] max-w-[520px] bg-main-gray rounded-[10px] mx-auto">
         <div className="flex justify-between items-center  ">
-          <span className="text-dark-text dark:text-light-text font-gilroy font-semibold text-lg">Connect Wallet</span>
+          <span className="text-white font-gilroy font-semibold text-lg">Connect Wallet</span>
 
           <div className="flex items-center cursor-pointer" onClick={() => setOpen(false)}>
-            <span className="text-sm font-gilroy font-semibold text-dark-text dark:text-light-text mr-2">Close</span>
+            <span className="text-sm font-gilroy font-semibold text-white mr-2">Close</span>
             <div className="flex justify-center items-center bg-[#E56060] text-[#E56060] bg-opacity-10 rounded-full w-[15px] h-[15px]">
               &#10005;
             </div>
@@ -66,7 +68,7 @@ export default function ConnectionModal({ children }) {
             onClick={onMetamask}
           >
             <img src={wallets[0].image} alt={wallets[0].name} className="w-[50px] h-[50px] mb-4" />
-            <span className="font-gilroy font-semibold text-dark-text dark:text-light-text">{wallets[0].name}</span>
+            <span className="font-gilroy font-semibold text-white">{wallets[0].name}</span>
           </button>
           <button
             className="flex focus:outline outline-primary-green py-4 px-4 flex-col items-center justify-center"
@@ -74,7 +76,7 @@ export default function ConnectionModal({ children }) {
             onClick={onConnect}
           >
             <img src={wallets[1].image} alt={wallets[1].name} className="w-[50px] h-[50px] mb-4" />
-            <span className="font-gilroy font-semibold text-dark-text dark:text-light-text">{wallets[1].name}</span>
+            <span className="font-gilroy font-semibold text-white">{wallets[1].name}</span>
           </button>
 
 

@@ -1,16 +1,15 @@
 import React from 'react'
 import { useState } from 'react'
-import { IoMdCopy } from 'react-icons/io'
 import { useModal } from "react-simple-modal-provider";
 import { useEthers } from "@usedapp/core";
 import ABI from "../config/abis/abi.json"
-import { ethers } from "ethers";
-import {contractAddress} from "../config/constants"
+import {contractAddress,BACKEND_URL} from "../config/constants"
 import { Contract } from "@ethersproject/contracts";
-
+import { ethers } from "ethers";
 
 export default function BuyManga() {
   const [copySuccess, setCopySuccess] = useState(false);
+  const [telegram, setTelegram] = useState(''); // telegram username
   const {account,library} = useEthers();
   const inputText = '0xdA022bf4402F3eDF32B02356056400E8d7eF5522';
   const { open: openModal } = useModal("ConnectionModal");
@@ -25,15 +24,15 @@ export default function BuyManga() {
       setCopySuccess(false);
     }, 2000);
   };
-
   const mint = async () => {
     if(!account){
       openModal();
       return;
     }
+  
 
     // const Contract
-    const contract = new Contract  (contractAddress, ABI, library.getSigner());
+    const contract = new Contract  (contractAddress, ABI,library.getSigner());
     try {
       const tx = await contract.Mint(account);
       await tx.wait();
@@ -42,6 +41,39 @@ export default function BuyManga() {
       console.log(e);
     }
 
+  }
+  const getMembership = async () => {
+    if (!account) {
+      openModal();
+      return;
+    }
+
+    if (telegram === "") {
+      alert('Please enter your telegram username');
+      return;
+    }
+    const contract = new Contract(contractAddress, ABI, library.getSigner());
+    try{
+      const balance = await contract.balanceOf(account)
+      if (parseFloat(ethers.utils.formatEther(balance)) === 0) {
+        // get membership
+        const response = await fetch(`${BACKEND_URL}add-member?username=${telegram}&address=${account}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        });
+        const data = await response.json();
+        alert (data.message);
+      }
+      else {
+        alert('You need to buy $Manga first')
+      }
+      
+    }
+    catch(e){
+      console.log(e);
+    }
   }
   return (
     <div className='bg-[#2E2238] flex flex-col gap-10 items-center justify-center  lg:pt-24 pt-32 pb-10'>
@@ -59,6 +91,15 @@ export default function BuyManga() {
       <button onClick={mint} className="text-center lg:py-4 lg:px-8 px-3 py-1 text-neutral-100 lg:text-[26px] text-[13px] font-bold leading-[34px] tracking-[0.52px]  bg-gradient-to-r from-fuchsia-700 via-slate-500 to-green-500 rounded-[13px]" >
         Buy $Manga
       </button>
+      {/* input to get telegram username and button to get membership */}
+      <div className='flex flex-col lg:flex-row gap-5'>
+        <input placeholder='Telegram Username e.g. johnManga' className='w-full lg:w-[400px] lg:py-3 lg:px-4 py-2 px-2 rounded-[10px] bg-transparent border border-[#F8F7F5] text-[#FFF]' 
+        onChange={(e) => setTelegram(e.target.value)}
+        />
+        <button onClick={getMembership} className='w-full lg:w-[180px] lg:py-3 lg:px-4 py-2 px-2 rounded-[10px] bg-gradient-to-r from-fuchsia-700 via-slate-500 to-green-500 text-[#FFF]'>
+          Get Membership
+        </button>
+      </div>
       {copySuccess && <p className="text-white">Copy Successful!</p>}
     </div>
   )
