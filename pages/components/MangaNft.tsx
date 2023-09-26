@@ -64,9 +64,9 @@ const MangaNft = React.forwardRef((props, ref) => {
               </p>
               <div className='flex items-center gap-x-3 mt-3'>
                 <div className="w-[1.5px] h-[27px] bg-[#8F41B4]"></div>
-                <a onClick={mint} className="text-[#F8F7F5] text-[13px] lg:text-[26px] w-fit underline underline-offset-8" href="/">
+                <span onClick={mint} className="text-[#F8F7F5] text-[13px] lg:text-[26px] w-fit underline underline-offset-8 cursor-pointer" href="/">
                   Mint Now
-                </a>
+                </span>
               </div>
             </div>
           </div>
