@@ -94,8 +94,10 @@ export default function BuyManga() {
         </div>
         <input defaultValue={inputText} className='w-2/3 max-w-[660px] pl-20 lg:text-[23px] tracking-[0.46px] lg:py-3 text-[#FFF] rounded-[14px] bg-transparent border py-3 px-3 border-dashed border-[#F8F7F5]' />
       </div>
-      <button onClick={mint} className="text-center lg:py-4 lg:px-8 px-3 py-1 text-neutral-100 lg:text-[26px] text-[13px] font-bold leading-[34px] tracking-[0.52px]  bg-gradient-to-r from-fuchsia-700 via-slate-500 to-green-500 rounded-[13px]" >
+      <button className="text-center lg:py-4 lg:px-8 px-3 py-1 text-neutral-100 lg:text-[26px] text-[13px] font-bold leading-[34px] tracking-[0.52px]  bg-gradient-to-r from-fuchsia-700 via-slate-500 to-green-500 rounded-[13px]" >
+        <a href='https://pancakeswap.finance/swap?outputCurrency=0xdA022bf4402F3eDF32B02356056400E8d7eF5522&chain=bsc' target='_blank' rel="noreferrer">
         Buy $Manga
+        </a>
       </button>
       {/* input to get telegram username and button to get membership */}
       <div className='flex flex-col lg:flex-row gap-5'>

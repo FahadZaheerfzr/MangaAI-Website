@@ -28,7 +28,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "pages/components/AIComunity.jsx", "pages/components/AIPoints.jsx", "pages/components/BuyManga.jsx", "pages/components/FirstMangaAI.jsx", "pages/components/GetInvolved.jsx", "pages/components/Manga.jsx", "pages/components/MangaAI.jsx", "pages/components/MangaAiSlider.jsx", "pages/components/MangaMobiloe.jsx", "pages/components/MangaNft.jsx", "pages/components/MangaNftMain.jsx", "pages/components/MangaTokenomics.jsx", "pages/components/Navbar.jsx", "pages/components/Partners.jsx", "pages/components/Slider.jsx", "pages/components/StartGuide.jsx", "pages/components/TelegramBot.jsx", "pages/components/WhyChoose.jsx", "pages/components/WhyChooseSlider.jsx", "pages/_app.jsx", "pages/_document.jsx", "pages/index.jsx"  ],
   "exclude": [
     "node_modules"
   ]
